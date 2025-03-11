@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: 'Helvetica Light';
+    src: url('fonts/Helvetica\ Light.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }  
+
+body {
+    font-family: 'Helvetica Light', Helvetica, sans-serif;
+    color: #363636;
+    
+}
+body p,h1,h2,h3,a li{
+    transform: scaleY(0.93);
+}
+.navigation {
+    background: url(Images/zomato-image.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    font-weight: lighter;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-top {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 550px;
+    padding: 20px 0px;
+}
+
+.nav-top ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: lighter;
+}
+
+.nav-top ul:hover {
+    cursor: pointer;
+}
+
+#logo {
+    margin-top: 75px;
+
+    height: 60px;
+}
+
+.para {
+    color: white;
+    font-size: 40px;
+    margin: 30px 10px;
+    font-weight: lighter;
+}
+
+.bar {
+    display: flex;
+    gap: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar select {
+    padding: 15px 10px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    color: gray;
+}
+
+#search {
+    padding: 15px 10px;
+    width: 500px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.line {
+    height: 23px;
+    width: 1.5px;
+    border: transparent;
+    background: rgba(128, 128, 128, 0.682);
+    align-self: center;
+    padding: 5px 0px;
+}
+
+#pin {
+    position: absolute;
+    height: 30px;
+    align-self: center;
+    margin: 13px 10px;
+    opacity: 50%;
+}
+
+.hero1 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.cards {
+    width: 350px;
+    background: lightblue;
+    overflow: hidden;
+    height: 240px;
+    border-radius: 10px;
+    place-content: center;
+    transition: ease-in-out 0.3s;
+    justify-content: space-between;
+    border: 1px solid rgba(235, 226, 226, 0.688);
+}
+
+.cards img {
+    margin-top: -40px;
+    width: 350px;
+}
+
+.cards-down {
+    position: relative;
+    background: white;
+    margin-top: -105px;
+    padding: 10px 15px;
+    width: 350px;
+    color: grey;
+}
+
+.cards-head {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-wrap: wrap;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.cards-para {
+    color: #363636;
+    font-size: 16px;
+    text-wrap: wrap;
+    font-weight: 550;
+
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+
+}
+
+.col-head {
+    color: #1C1C1C;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.col-main-text {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    font-weight: 100;
+
+}
+
+.Collections {
+    color: #363636;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.col-main-text button {
+    font-size: 18px;
+    color: #FF7E8B;
+    border: none;
+    background: transparent;
+
+}
+
+.coll-card {
+    width: 259px;
+    height: 320px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#col-card1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/Collection-card1.avif');
+    background-position: center;
+    background-size: cover;
+}
+
+#col-card2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/Collection-card2.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+#col-card3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/Collection-card3.avif');
+    background-position: center;
+    background-size: cover;
+
+}
+
+#col-card4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/Collection-card4.avif');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.col-card-con {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.coll-card h6 {
+    padding: 0px 16px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.coll-card p {
+    padding: 0px 16px;
+    margin: 3px 0px 10px;
+}
+
+.location h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.location span {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.loc-card {
+    width: 345px;
+    height: 79px;
+    border: 2px solid rgba(211, 211, 211, 0.287);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.loc-card:hover {
+    transition: ease-in-out 0.1s;
+    box-shadow: 0px 5px 10px rgb(211, 211, 211, 0.287);
+}
+
+.loc-card h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #1C1C1C;
+}
+
+.loc-card p {
+    font-size: 16px;
+}
+
+.loc-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+}
+
+.loc-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    gap: 40px;
+}
+
+.loc-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loc-svg {
+    display: flex;
+    place-items: center;
+}
+
+#loc-card-special {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    place-items: center;
+    color: black;
+}
+
+#loc-card-special p {
+    font-size: 20px;
+}
+
+.phone-img {
+    width: 410px;
+    height: 450px;
+}
+
+.get-Zomato h1 {
+    font-size: 44px;
+    font-weight: 300px;
+    color: #1C1C1C;
+}
+
+.get-Zomato-psm {
+    font-size: 14px;
+    color: #9C9C9C;
+}
+
+.download-con img {
+    width: 137px;
+    height: 40px;
+}
+
+.zom-input-con input {
+    padding: 12.5px 11.5px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.zom-input-con {
+    display: flex;
+    gap: 10px;
+}
+
+.zom-input-con input:focus {
+
+    outline-color: rgb(7, 149, 149);
+}
+
+.zom-input-con button {
+    font-size: 16px;
+    background: #EF4F5F;
+    padding: 0px 16px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.zom-input-con button:hover {
+    background: #ef394c;
+}
+
+.get-Zomato {
+    display: flex;
+    height: 480px;
+    justify-content: center;
+    place-items: center;
+    background: #FFFBF7;
+    width: 100%;
+}
+
+.zom-con-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 30px 0px;
+    padding-bottom: 55px;
+}
+
+.All {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 85px;
+    padding: 50px 0px;
+    background: rgba(245, 245, 245, 0.35);
+}
+
+.E-options-con h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #363636;
+}
+
+.E-options-con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 20px;
+}
+
+.E-options-card p {
+    font-size: 20px;
+
+}
+
+.E-options-card {
+    border: 1px solid lightgray;
+    padding: 20px 24px;
+    width: 1000px;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background: white;
+
+}
+
+.E-options-head {
+    width: 1000px;
+}
+
+.footer-img-con img {
+    width: 132px;
+}
+
+.footer-img-con {
+    background: rgba(211, 211, 211, 0.568);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.social {
+    display: flex;
+    font-size: 40px;
+    gap: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background: lightgray;
+    width: 100%;
+    gap: 15px;
+    color: black;
+    padding: 30px 0px;
+}
+
+footer h2 {
+    font-size: 30px;
+}
+
+.search-svg-con {
+    background: white;
+    padding: 0px 10px;
+    display: flex;
+    place-items: center;
+    height: 52px;
+    /* border-left: 1px solid gray; */
+}
+
+.select-con {
+    padding-right: 10px;
+    background: white;
+    display: flex;
+    place-items: center;
+}
+.social a{
+    color: #363636;
+}
